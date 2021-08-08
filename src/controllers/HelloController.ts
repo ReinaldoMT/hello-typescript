@@ -1,7 +1,7 @@
-import { Request, Response } from '../schemas';
+import { Request, Response } from 'express';
 
 class HelloController {
-  public async index(req: Request, res: Response): Promise<Response> {
+  public async index(_req: Request, res: Response): Promise<Response> {
     return res.json({ message: 'Hello World!' });
   }
   public async show(req: Request, res: Response): Promise<Response> {
